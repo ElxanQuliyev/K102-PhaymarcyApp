@@ -41,6 +41,7 @@ namespace K102PhaymarcyApp
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuyMedName = new System.Windows.Forms.TextBox();
             this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.btnAddMedicine = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SellMedicinePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmBuyCount)).BeginInit();
@@ -92,6 +93,7 @@ namespace K102PhaymarcyApp
             // 
             this.SellMedicinePanel.Controls.Add(this.btnBuyMedicine);
             this.SellMedicinePanel.Controls.Add(this.ckBuyMedLİst);
+            this.SellMedicinePanel.Controls.Add(this.btnAddMedicine);
             this.SellMedicinePanel.Controls.Add(this.nmBuyCount);
             this.SellMedicinePanel.Controls.Add(this.label7);
             this.SellMedicinePanel.Controls.Add(this.label6);
@@ -189,6 +191,20 @@ namespace K102PhaymarcyApp
             this.txtBarcode.Size = new System.Drawing.Size(215, 23);
             this.txtBarcode.TabIndex = 26;
             // 
+            // btnAddMedicine
+            // 
+            this.btnAddMedicine.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnAddMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddMedicine.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMedicine.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnAddMedicine.Location = new System.Drawing.Point(8, 132);
+            this.btnAddMedicine.Name = "btnAddMedicine";
+            this.btnAddMedicine.Size = new System.Drawing.Size(88, 37);
+            this.btnAddMedicine.TabIndex = 16;
+            this.btnAddMedicine.Text = "Add";
+            this.btnAddMedicine.UseVisualStyleBackColor = false;
+            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
+            // 
             // BarcodeReaderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,5 +243,6 @@ namespace K102PhaymarcyApp
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtBuyMedName;
         private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.Button btnAddMedicine;
     }
 }
